@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: black; /* initial color */
+            transition: color 0.3s ease; /* smooth color transition */
+            cursor: pointer; /* pointer cursor as a hint that it's interactive */
+        }
+
+        h1:hover {
+            color: darkgreen; /* or #006400 */
+        }
+
+        .easter-egg {
+            color: transparent;
+            background: transparent;
+            cursor: pointer;
+            user-select: none;
+            padding: 10px;
+            display: inline-block;
+            transition: all 0.3s ease; /* smooth reveal animation */
+            font-size: 2em; /* same size as h1 — adjust if needed */
+            line-height: 1.2; /* optional: improves spacing */
+        }
+
+        .easter-egg:hover {
+            color: darkred; /* dark red on hover */
+            background: #ffffcc;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is an Example + Project</h1>
+
+    <!-- Easter egg at the bottom of the page -->
+    <div style="margin-top: 200px; text-align: center;">
+        <p>Find the Easter egg</p>
+        <div class="easter-egg">It's interesting to find!</div>
+    </div>
+</body>
+</html>
